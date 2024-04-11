@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display:flex;
+    color: rgb(97, 97, 97)
+}
+
+html,body,main {
+    height:100%;
+    margin:0
+}
+
+.left_column {
+    background-image: url('/public/images/fon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: auto;
+    width: 920px;
+    height: 100%;
+
+}
+
+.left_column form {
+    margin: 100px;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title_send {
+    margin: 8%;
+}
+
+.left_column input {
+    margin: 5% 0 5% 0;
+    border-radius: 10px;
+    width: 60%;
+    height: 40px;
+}
+
+textarea {
+    width: 60%;
+    border-radius: 10px;
+    margin: 5% 0 5% 0;
+    resize:none
+}
+
+.button_send {
+    background-color: #A04DE0;
+    border: none;
+    font-size: large;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button_send:hover {
+    background-color: #864ab3;
+    border: none;
+}
+
+.right_column {
+    float: right;
+    width: 920px;
+}
+
+.title_message {
+    text-align: center;
+}
+
+.messages {
+    font-size: larger;
+}
+
+.message {
+    margin-left: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.322);
+    margin-bottom: 15px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+.top h2 {
+    max-width: 145px;
+    margin-right: 75%;
+}
+
+.top h3 {
+    float: right;
+}
