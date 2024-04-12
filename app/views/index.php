@@ -31,6 +31,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus saepe repudiandae aperiam maxime hic quis. Possimus ratione tempora vel cupiditate maiores non omnis velit impedit consequuntur accusamus, perferendis iste.
                     </div>
                 </article>
+                
                 <article class="message">
                     <div class="top">
                         <h2>Name</h3>

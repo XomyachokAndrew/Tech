@@ -1,11 +1,15 @@
 <?php
 
+namespace app\core;
+
+use app\core\view;
+
 class Controller
 {
     public $model;
     public $view;
 
-    function __construct()
+    public function __construct()
     {
         $this->view = new View();
     }

@@ -1,8 +1,10 @@
 <?php
 
+namespace app\core;
+
 class Route
 {
-    static function start()
+    public static function start()
     {
         $controller_name = 'Main';
         $action_name = 'index';
@@ -37,26 +39,33 @@ class Route
 
         $controller_file = strtolower($controller_name).'.php';
         $controller_path = 'app/controllers/'. $controller_file;
-
-        if(file_exists($controller_path))
+        
+        if(!file_exists($controller_path))
         {
-            include $controller_path;
+            echo "контроллера нет";
+            return;
         }
-        else
-        {
-            echo "Контроллера нет";
-        }
+        include $controller_path;
 
         $controller = new $controller_name();
         $action = $action_name;
 
-        if(method_exists($controller, $action))
+        if(!method_exists($controller, $action))
         {
-            $controller->$action();
+            echo "нет действия";
+            return;
         }
-        else
-        {
-            echo 'Нет действий';
-        }
+        $controller->$action();
     }
+
+    // function ShowError($error_controller_path = null, $error_action = null) 
+    // {
+    //     if (isset($error_controller_path))
+    //     {
+    //         //выводиться ошибка action
+    //         return;
+    //     }
+    //     //выводиться ошибка контроллера
+    // }
+
 }

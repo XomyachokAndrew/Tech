@@ -1,20 +1,18 @@
 <?php
 
+namespace app\core;
+
 class View
 {
-    function generate($content_view, $template_view = null, $data = null)
+    public function generate($content_view, $template_view = null, $data = null)
     {
-        if(is_array($data))
-        {
+        if(is_array($data)) {
             extract($data);
         }
 
-        if(isset($template_view))
-        {
+        if(isset($template_view)) {
             include 'app/views/'. $template_view;
-        }
-        else
-        {
+        } else {
             include 'app/views/'. $content_view;
         }
     }
