@@ -73,6 +73,7 @@ textarea {
 .right_column {
     float: right;
     width: 920px;
+    overflow-y: scroll;
 }
 
 .title_message {
@@ -91,13 +92,19 @@ textarea {
 
 .top {
     display: flex;
+    position: relative;
     align-items: center;
+    height: 50px;
 }
 .top h2 {
-    max-width: 145px;
-    margin-right: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 .top h3 {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
