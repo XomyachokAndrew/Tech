@@ -17,13 +17,12 @@ html,body,main {
     background-image: url('/public/images/fon.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-size: auto;
-    width: 920px;
+    width: 50%;
     height: 100%;
 
 }
@@ -72,7 +71,7 @@ textarea {
 
 .right_column {
     float: right;
-    width: 920px;
+    width: 50%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
