@@ -14,9 +14,19 @@ class MessagesModel extends Model
     {
         $database = new DataBase;
         $pdo = $database->connection;
-        $stmt = $pdo->prepare('SELECT * FROM '. $this->table);
+        $stmt = $pdo->prepare('SELECT * FROM messages ORDER BY id DESC');
         $stmt->execute();
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function insert_data($array = [])
+    {
+        $database = new DataBase;
+        $pdo = $database->connection;
+        $stmt = $pdo->prepare("INSERT INTO `messages`(`full_name`, `email`, `message`) VALUES(:full_name, :email, :message)");
+        $stmt->execute(array('full_name' => $array[0], 'email' => $array[1], 'message' => $array[2]));
+    }
 }
+
+
