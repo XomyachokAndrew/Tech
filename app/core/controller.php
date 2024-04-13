@@ -16,6 +16,6 @@ class Controller
 
     public function indexaction()
     {
-        $this->view->generate('index.php');
+        
     }
 }

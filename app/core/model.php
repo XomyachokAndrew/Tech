@@ -8,4 +8,9 @@ class Model
     {
             
     }
+
+    public function insert_data($array = [])
+    {
+            
+    }
 }
