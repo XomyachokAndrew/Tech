@@ -12,21 +12,21 @@ class MainController extends Controller
         $this->view->generate('index.php', $data);
     }
 
-    public function maininsertaction()
+    public function indexinsertaction()
     {
         $full_name = $_POST['full_name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
 
         $array = [
-            $full_name,
-            $email,
-            $message
+            'full_name' => $full_name,
+            'email' => $email,
+            'message' => $message
         ];
 
         $messages = new MessagesModel;
         $data = $messages->insert_data($array);
 
-        $this->indexaction();
+        echo json_encode($array);
     }
 }

@@ -25,7 +25,7 @@ class MessagesModel extends Model
         $database = new DataBase;
         $pdo = $database->connection;
         $stmt = $pdo->prepare("INSERT INTO `messages`(`full_name`, `email`, `message`) VALUES(:full_name, :email, :message)");
-        $stmt->execute(array('full_name' => $array[0], 'email' => $array[1], 'message' => $array[2]));
+        $stmt->execute(array('full_name' => $array['full_name'], 'email' => $array['email'], 'message' => $array['message']));
     }
 }
 

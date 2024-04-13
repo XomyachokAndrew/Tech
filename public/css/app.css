@@ -74,6 +74,7 @@ textarea {
     float: right;
     width: 920px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .title_message {
@@ -88,6 +89,10 @@ textarea {
     margin-left: 20px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.322);
     margin-bottom: 15px;
+}
+
+.message div {
+    word-wrap:break-word;
 }
 
 .top {
