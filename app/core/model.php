@@ -4,12 +4,12 @@ namespace app\core;
 
 class Model
 {
-    public function get_data()
+    public function get()
     {
             
     }
 
-    public function insert_data($array = [])
+    public function insert($array = [])
     {
             
     }

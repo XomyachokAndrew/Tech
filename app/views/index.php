@@ -17,7 +17,6 @@
                 <input class="button_send" type="submit" value="Отправить">
             </form>
         </section>
-
         <section class="right_column">
             <h1 class="title_message">Сообщения</h1>
             <hr>
@@ -33,7 +32,6 @@
                     </div>
                 </article>
                 <?php endforeach; ?>
-                
             </section>
         </section>
     </main>

@@ -57,15 +57,4 @@ class Route
         }
         $controller->$action();
     }
-
-    // function ShowError($error_controller_path = null, $error_action = null) 
-    // {
-    //     if (isset($error_controller_path))
-    //     {
-    //         //выводиться ошибка action
-    //         return;
-    //     }
-    //     //выводиться ошибка контроллера
-    // }
-
 }

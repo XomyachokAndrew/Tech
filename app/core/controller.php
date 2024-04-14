@@ -6,7 +6,6 @@ use app\core\view;
 
 class Controller
 {
-    public $model;
     public $view;
 
     public function __construct()
@@ -14,8 +13,8 @@ class Controller
         $this->view = new View();
     }
 
-    public function indexaction()
+    public function indexAction()
     {
-        
+
     }
 }

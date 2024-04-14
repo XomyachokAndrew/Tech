@@ -5,14 +5,14 @@ use app\models\MessagesModel;
 
 class MainController extends Controller
 {
-    public function indexaction()
+    public function indexAction()
     {
         $messages = new MessagesModel;
-        $data = $messages->get_data();
+        $data = $messages->get();
         $this->view->generate('index.php', $data);
     }
 
-    public function indexinsertaction()
+    public function indexInsertAction()
     {
         if (!isset($_POST['full_name']) || !isset($_POST['email']) || !isset($_POST['message'])) {
             return;
@@ -33,7 +33,7 @@ class MainController extends Controller
         ];
 
         $messages = new MessagesModel;
-        $data = $messages->insert_data($array);
+        $data = $messages->insert($array);
 
         echo json_encode($array);
     }

@@ -5,10 +5,10 @@ use app\models\MessagesModel;
 
 class TestController extends Controller
 {
-    public function testaction()
+    public function testAction()
     {
         $messages = new MessagesModel;
-        $data = $messages->get_data();
+        $data = $messages->get();
         $this->view->generate('main.php', $data, 'template.php');
     }
 }
