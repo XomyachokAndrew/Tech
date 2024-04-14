@@ -2,15 +2,9 @@
 
 namespace app\core;
 
-class Model
+abstract class Model
 {
-    public function get()
-    {
-            
-    }
+    abstract public function get();
 
-    public function insert($array = [])
-    {
-            
-    }
+    abstract public function insert($array = []);
 }

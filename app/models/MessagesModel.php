@@ -10,7 +10,7 @@ class MessagesModel extends Model
 {
     public $table = 'messages';
 
-    public function get_data()
+    public function get()
     {
         $database = new DataBase;
         $pdo = $database->connection;
@@ -20,7 +20,7 @@ class MessagesModel extends Model
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function insert_data($array = [])
+    public function insert($array = [])
     {
         $database = new DataBase;
         $pdo = $database->connection;
