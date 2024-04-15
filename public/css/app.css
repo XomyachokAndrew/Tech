@@ -4,13 +4,15 @@
 }
 
 main {
-    display:flex;
+    display: flex;
     color: rgb(97, 97, 97)
 }
 
-html,body,main {
-    height:100%;
-    margin:0
+html,
+body,
+main {
+    height: 100%;
+    margin: 0
 }
 
 .left_column {
@@ -53,7 +55,7 @@ textarea {
     width: 60%;
     border-radius: 10px;
     margin: 5% 0 5% 0;
-    resize:none
+    resize: none
 }
 
 .button_send {
@@ -91,7 +93,7 @@ textarea {
 }
 
 .message div {
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 .top {
@@ -100,6 +102,7 @@ textarea {
     align-items: center;
     height: 50px;
 }
+
 .top h2 {
     position: absolute;
     top: 0;

@@ -11,9 +11,9 @@ class View
         }
 
         if(isset($template_view)) {
-            include 'app/views/'. $template_view;
+            include 'app/views/'. $template_view .'.php';
         } else {
-            include 'app/views/'. $content_view;
+            include 'app/views/'. $content_view .'.php';
         }
     }
 }

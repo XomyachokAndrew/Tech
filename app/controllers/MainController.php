@@ -9,7 +9,7 @@ class MainController extends Controller
     {
         $messages = new MessagesModel;
         $data = $messages->get();
-        $this->view->generate('index.php', $data);
+        $this->view->generate('index', $data);
     }
 
     public function indexInsertAction()
@@ -33,7 +33,7 @@ class MainController extends Controller
         ];
 
         $messages = new MessagesModel;
-        $data = $messages->insert($array);
+        $messages->insert($array);
 
         echo json_encode($array);
     }
