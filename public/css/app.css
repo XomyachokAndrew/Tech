@@ -1,117 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 main {
-    display: flex;
-    color: rgb(97, 97, 97)
+  display: flex;
+  color: rgb(97, 97, 97)
 }
 
 html,
 body,
 main {
-    height: 100%;
-    margin: 0
+  height: 100%;
+  margin: 0
 }
 
 .left_column {
-    background-image: url('/public/images/fon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-size: auto;
-    width: 50%;
-    height: 100%;
+  background-image: url('/public/images/fon.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: auto;
+  width: 50%;
+  height: 100%;
 
 }
 
 .left_column form {
-    margin: 100px;
-    width: 60%;
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  margin: 100px;
+  width: 60%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .title_send {
-    margin: 8%;
+  margin: 8%;
 }
 
 .left_column input {
-    margin: 5% 0 5% 0;
-    border-radius: 10px;
-    width: 60%;
-    height: 40px;
+  margin: 5% 0 5% 0;
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
 }
 
 textarea {
-    width: 60%;
-    border-radius: 10px;
-    margin: 5% 0 5% 0;
-    resize: none
+  width: 60%;
+  border-radius: 10px;
+  margin: 5% 0 5% 0;
+  resize: none
 }
 
 .button_send {
-    background-color: #A04DE0;
-    border: none;
-    font-size: large;
-    color: white;
-    transition: background-color 0.3s ease;
+  background-color: #A04DE0;
+  border: none;
+  font-size: large;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
 .button_send:hover {
-    background-color: #864ab3;
-    border: none;
+  background-color: #864ab3;
+  border: none;
 }
 
 .right_column {
-    float: right;
-    width: 50%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  float: right;
+  width: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .title_message {
-    text-align: center;
+  text-align: center;
 }
 
 .messages {
-    font-size: larger;
+  font-size: larger;
 }
 
 .message {
-    margin-left: 20px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.322);
-    margin-bottom: 15px;
+  margin-left: 20px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.322);
+  margin-bottom: 15px;
 }
 
 .message div {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .top {
-    display: flex;
-    position: relative;
-    align-items: center;
-    height: 50px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
 }
 
 .top h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .top h3 {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

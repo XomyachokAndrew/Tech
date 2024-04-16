@@ -4,8 +4,11 @@ namespace app\core;
 
 class View
 {
-    public function generate($content_view,  $data = null, $template_view = null)
-    {
+    public function generate(
+        $content_view,  
+        $data = null, 
+        $template_view = null
+    ){
         if(is_array($data)) {
             extract($data);
         }

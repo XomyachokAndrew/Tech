@@ -13,8 +13,5 @@ class Controller
         $this->view = new View();
     }
 
-    public function indexAction()
-    {
-
-    }
+    public function indexAction() {}
 }

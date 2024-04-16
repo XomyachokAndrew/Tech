@@ -26,6 +26,7 @@ class MainController extends Controller
         if (!preg_match($pattern_email, $email) || $full_name == null || $message == null) {
             return;
         }
+
         $array = [
             'full_name' => $full_name,
             'email' => $email,

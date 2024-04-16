@@ -28,5 +28,3 @@ class MessagesModel extends Model
         $stmt->execute(array('full_name' => $array['full_name'], 'email' => $array['email'], 'message' => $array['message']));
     }
 }
-
-
