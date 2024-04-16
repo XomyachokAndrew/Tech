@@ -1,7 +1,7 @@
 <?php
 
-use app\core\controller;
-use app\models\MessagesModel;
+use App\Core\Controller;
+use App\Models\MessagesModel;
 
 class MainController extends Controller
 {
@@ -22,10 +22,13 @@ class MainController extends Controller
         $email = $_POST['email'];
         $message = $_POST['message'];
         $pattern_email = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
+        $pattern_full_name = '/^[А-ЯЁ][а-яё]*\s[А-ЯЁ][а-яё]*\s[А-ЯЁ][а-яё]*$/u';
 
-        if (!preg_match($pattern_email, $email) || $full_name == null || $message == null) {
+        if (!preg_match($pattern_email, $email) || !preg_match($pattern_full_name, $full_name) || $message == null) {
             return;
         }
+
+        $message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
 
         $array = [
             'full_name' => $full_name,

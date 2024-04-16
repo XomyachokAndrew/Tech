@@ -1,9 +1,9 @@
 <?php
 
-namespace app\models;
+namespace App\Models;
 
-use app\lib\database;
-use app\core\model;
+use App\Lib\Database;
+use App\Core\Model;
 use PDO;
 
 class MessagesModel extends Model
