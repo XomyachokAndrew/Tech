@@ -6,8 +6,8 @@ class Route
 {
     public static function start()
     {
-        $controller_name = 'Main';
-        $action_name = 'index';
+        $standart_controller_name = 'Main';
+        $standart_action_name = 'index';
 
         $routes = explode('/', $_SERVER['REQUEST_URI']);
 
@@ -19,13 +19,9 @@ class Route
             $action_name = $routes[2];
         }
 
-        $model_name = $controller_name . 'Model';
-        $controller_name = $controller_name . 'Controller';
-        $action_name = $action_name . 'Action';
-
-        // echo "Model: $model_name <br>";
-        // echo "Controller: $controller_name <br>";
-        // echo "Action: $action_name <br>";
+        $model_name = $standart_controller_name . 'Model';
+        $controller_name = $standart_controller_name . 'Controller';
+        $action_name = $standart_action_name . 'Action';
 
         $model_file = strtolower($model_name) . '.php';
         $model_path = 'app/models/' . $model_file;

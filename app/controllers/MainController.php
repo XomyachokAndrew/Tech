@@ -30,15 +30,15 @@ class MainController extends Controller
 
         $message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
 
-        $array = [
+        $data_array = [
             'full_name' => $full_name,
             'email' => $email,
             'message' => $message
         ];
 
         $messages = new MessagesModel;
-        $messages->insert($array);
+        $messages->insert($data_array);
 
-        echo json_encode($array);
+        echo json_encode($data_array);
     }
 }

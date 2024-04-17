@@ -6,5 +6,5 @@ abstract class Model
 {
     abstract public function get();
 
-    abstract public function insert($array = []);
+    abstract public function insert($data_array = []);
 }

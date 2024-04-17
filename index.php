@@ -12,7 +12,7 @@ spl_autoload_register(function($class)
     }
 );
 
-use app\core\route;
+use App\Core\Route;
 
 $route = new Route();
 
